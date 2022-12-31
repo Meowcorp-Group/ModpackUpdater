@@ -1,6 +1,35 @@
 # ModpackUpdater
 python modpack management tool that works with packwiz
 
+This project should run out of the box without any additional dependencies, as long as you are using the latest versions of python.
+
+## Installation
+### Updater
+Updater is designed for MultiMC-based launchers. We reccomend [Prism Launcher](https://prismlauncher.org/).
+
+- Place `updater-bootstrap.py` in the `.minecraft` folder of your instance. 
+- Download the latest packwiz installer bootstrap jar, and place it in the same directory as Updater.
+- Go to Edit Instance, Settings, Custom Commands, Pre-launch command, and enter:
+  ```sh
+  python updater-bootstrap.py
+  ```
+  - For maximum compatibility, call python with `python` instead of `python3` (because Windows)
+
+### UpdateTool
+- Place `updatetool.py` in your project directory.
+- Optional: Rename to `updatetool` for shorter commands.
+- Download the latest packwiz CLI build for your platform, and place it in the same directory as UpdateTool
+- Updating:
+  - Update UpdateTool with `./updatetool upgrade updatetool`
+  - Update packwiz CLI with `./updatetool upgrade packwiz`
+  - Update both with `./updatetool upgrade`
+
+## Usage
+### Updater
+Updater should run when the instance is run, and will update itself automatically if an update is available.
+
+### UpdateTool
+
 ## License
 ModpackUpdater - python modpack management tool that works with packwiz <br>
 Copyright (C) 2022 Meowcorp-Group
