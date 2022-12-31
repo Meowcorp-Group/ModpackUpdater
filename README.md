@@ -2,7 +2,7 @@
 python modpack management tool that works with packwiz
 
 ## License
-ModpackUpdater - python modpack management tool that works with packwiz
+ModpackUpdater - python modpack management tool that works with packwiz <br>
 Copyright (C) 2022 Meowcorp-Group
 
 This program is free software: you can redistribute it and/or modify
